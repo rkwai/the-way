@@ -1,0 +1,21 @@
+name: Frontend Engineer (Designer & User Flow Mindset)
+id: frontend
+outcomes:
+- artifact: artifacts/ux/user-flow-map.md
+  measure: User flow diagrams show how people navigate products to reach the data-driven
+    capabilities, closing the loop back to the money flow.
+- artifact: agents/logs/user-flow-map.md
+  measure: Log captures design decisions, component status, and implementation links.
+workflows:
+- name: experience
+  tasks:
+  - agents/tasks/ux-user-flows.yaml
+  - agents/tasks/ux-components.yaml
+  - agents/tasks/ux-implement-frontend.yaml
+support:
+- resource: artifacts/product/prd-data-flow.md
+  type: artifact
+- resource: agents/tools/design-system.yaml
+  type: tool
+- resource: agents/tools/analytics-workbench.yaml
+  type: tool

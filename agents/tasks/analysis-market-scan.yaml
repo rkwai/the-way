@@ -1,0 +1,12 @@
+name: "Analysis: Market Scan"
+objective: Summarise market size, demand, and competitors that influence revenue potential.
+inputs:
+  - agents/tools/market-data.yaml
+  - artifacts/analysis/market-business-flow.md
+steps:
+  - Gather latest market size numbers (economy → industry → target market) and key competitors.
+  - Document customer jobs-to-be-done and demand signals in artifacts/analysis/market-business-flow.md.
+  - Note assumptions, risks, and data sources in agents/logs/market-business-flow.md.
+evidence:
+  - Updated artifacts/analysis/market-business-flow.md sections Market Overview and Demand Signals.
+  - Entry added to agents/logs/market-business-flow.md.

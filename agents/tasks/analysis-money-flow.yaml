@@ -1,0 +1,12 @@
+name: "Analysis: Money Flow"
+objective: Describe how cash moves from the broader economy through the market and into this company, highlighting monetisation levers.
+inputs:
+  - artifacts/analysis/market-business-flow.md
+  - agents/tools/revenue-ledger.yaml
+steps:
+  - Draft the money flow diagram (economy → market → company revenue) inside artifacts/analysis/market-business-flow.md.
+  - List revenue sources, cost centres, and pricing strategies with data citations.
+  - Capture validation experiments and metrics in agents/logs/market-business-flow.md.
+evidence:
+  - Money flow diagram and business analysis sections updated in artifacts/analysis/market-business-flow.md.
+  - Entry added to agents/logs/market-business-flow.md.

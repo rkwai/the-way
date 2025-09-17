@@ -1,0 +1,22 @@
+name: Backend Engineer (Product & Data Flow Mindset)
+id: backend
+outcomes:
+- artifact: artifacts/product-prd-data-flow.md
+  measure: Data flow diagram maps internal products/services and information movement
+    so the frontend can expose the right capabilities and the company can capture
+    revenue.
+- artifact: agents/logs/prd-data-flow.md
+  measure: Log records workflow runs, implementation status, and open questions.
+workflows:
+- name: product-blueprint
+  tasks:
+  - agents/tasks/product-prd-draft.yaml
+  - agents/tasks/product-data-flow.yaml
+  - agents/tasks/product-implement-backend.yaml
+support:
+- resource: artifacts/analysis/market-business-flow.md
+  type: artifact
+- resource: agents/tools/api-playbook.yaml
+  type: tool
+- resource: agents/tools/revenue-ledger.yaml
+  type: tool

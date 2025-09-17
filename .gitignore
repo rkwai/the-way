@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Build outputs
+products/web-app/dist/
+products/service-api/dist/
+
+# Environment files
+.env
+*.local
+
+# Logs
+logs/
+*.log
+!agents/logs/
+
+# OS files
+.DS_Store

@@ -1,0 +1,12 @@
+name: "Analysis: Implementation Plan"
+objective: Translate insights into measurable instrumentation and reporting actions.
+inputs:
+  - artifacts/analysis/market-business-flow.md
+  - agents/tools/analytics-workbench.yaml
+steps:
+  - Define metrics to capture and record them in the instrumentation plan section of artifacts/analysis/market-business-flow.md.
+  - Specify dashboards or reports to build, with owners and cadence.
+  - Log next actions in agents/logs/market-business-flow.md.
+evidence:
+  - Instrumentation plan table completed in artifacts/analysis/market-business-flow.md.
+  - Updated entry in agents/logs/market-business-flow.md.

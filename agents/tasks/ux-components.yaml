@@ -1,0 +1,12 @@
+name: "Experience: Interface Components"
+objective: Define the components, content, and states required for the user flows.
+inputs:
+  - artifacts/ux/user-flow-map.md
+  - agents/tools/design-system.yaml
+steps:
+  - Populate the Interface Components table with component names, purpose, backend capability linkage, and status.
+  - Document content notes, loading/empty/error states, accessibility considerations, and analytics touchpoints.
+  - Update agents/logs/user-flow-map.md with changes and follow-ups.
+evidence:
+  - Components and handoff sections in artifacts/ux/user-flow-map.md filled out.
+  - Log entry in agents/logs/user-flow-map.md.

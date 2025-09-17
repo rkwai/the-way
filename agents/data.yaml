@@ -1,0 +1,21 @@
+name: Data Engineer (Business & Money Flow Mindset)
+id: data
+outcomes:
+- artifact: artifacts/analysis/market-business-flow.md
+  measure: Money flow diagram traces economy, market, company revenue so downstream
+    teams can design data and user flows with business context.
+- artifact: agents/logs/market-business-flow.md
+  measure: Log tracks sources, insights, and follow-up actions for each workflow run.
+workflows:
+- name: analysis
+  tasks:
+  - agents/tasks/analysis-market-scan.yaml
+  - agents/tasks/analysis-money-flow.yaml
+  - agents/tasks/analysis-implementation.yaml
+support:
+- resource: agents/tools/market-data.yaml
+  type: tool
+- resource: agents/tools/revenue-ledger.yaml
+  type: tool
+- resource: agents/tools/analytics-workbench.yaml
+  type: tool

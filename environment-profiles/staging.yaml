@@ -1,0 +1,15 @@
+name: staging
+description: Shared staging environment for validating money/data flows end-to-end.
+variables:
+  API_BASE_URL: https://staging.api.example.com
+  WEB_BASE_URL: https://staging.app.example.com
+  NODE_ENV: staging
+services:
+  - name: web-app
+    deploy: Run npm run deploy:staging in products/web-app
+  - name: service-api
+    deploy: Run npm run deploy:staging in products/service-api
+checklist:
+  - Money flow scenarios tested against staging.
+  - Data flow instrumentation reviewed using the analytics workbench.
+  - Experience blueprint validated on target browsers/devices.

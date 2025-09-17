@@ -1,0 +1,12 @@
+name: "Product: Data Flow Diagram"
+objective: Define how data moves through internal products and services so the company can capture the money flow described by the analysis.
+inputs:
+  - artifacts/product/prd-data-flow.md
+  - agents/tools/api-playbook.yaml
+steps:
+  - Draw or describe the data flow diagram inside artifacts/product/prd-data-flow.md.
+  - Enumerate company products (services/APIs), payload schemas, and storage requirements that move data between teams and systems.
+  - Note compliance or retention considerations in the PRD and log.
+evidence:
+  - Data Flow Diagram section of artifacts/product/prd-data-flow.md updated.
+  - Log entry in agents/logs/prd-data-flow.md.
