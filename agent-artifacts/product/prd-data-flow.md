@@ -10,14 +10,19 @@
 - Cost structure:
 - Guardrails / compliance:
 
-```
-[ User Action ] -> [ Billing Event ] -> [ Settlement System ]
-```
-
-## Data Flow Diagram
-```
-[ Client ] -> [ API Capability ] -> [ Service ] -> [ Data Store ]
-                     |-> [ Event Stream ]
+## Data Flow Diagram (C3 Mermaid)
+```mermaid
+flowchart LR
+    subgraph Container_A
+        ServiceA[Service A]
+        ServiceB[Service B]
+    end
+    subgraph Container_B
+        ServiceC[Service C]
+    end
+    ServiceA -->|Event| ServiceC
+    ServiceB -->|API| ServiceC
+    ServiceC --> DataStore[(Data Store)]
 ```
 - API capabilities (name, purpose, status):
 - Data contracts (schemas, retention, privacy):

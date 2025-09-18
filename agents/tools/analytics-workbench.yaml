@@ -1,6 +1,0 @@
-name: Analytics Workbench
-usage: Define events, metrics, and dashboards for instrumentation.
-endpoints:
-- https://analytics.example.com/workbench
-artifacts:
-- artifact: artifacts/analysis/market-business-flow.md

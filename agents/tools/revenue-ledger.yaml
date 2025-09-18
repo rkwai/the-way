@@ -1,4 +1,0 @@
-name: Revenue Ledger
-usage: Model pricing, cost, and margin assumptions for money flow diagrams.
-artifacts:
-- artifact: artifacts/analysis/market-business-flow.md

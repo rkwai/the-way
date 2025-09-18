@@ -12,7 +12,7 @@ products/service-api/dist/
 # Logs
 logs/
 *.log
-!agents/logs/
+!changelog/**
 
 # OS files
 .DS_Store

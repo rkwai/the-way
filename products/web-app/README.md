@@ -1,6 +1,6 @@
 # Web Application Module
 
-Implements the Experience Blueprint documented in `artifacts/ux/user-flow-map.md`.
+Implements the Experience Blueprint documented in `agent-artifacts/ux/user-flow-map.md`.
 
 ## Quick Commands
 | Command | Purpose |
@@ -14,4 +14,4 @@ Implements the Experience Blueprint documented in `artifacts/ux/user-flow-map.md
 - Routes match the “Entry Points” table.
 - Components reference the Design System tokens.
 - Analytics events fire according to the instrumentation plan.
-- Link preview builds or Storybook stories in `agents/logs/user-flow-map.md`.
+- Link preview builds or Storybook stories in `agents/changelog/user-flow-map.md`.

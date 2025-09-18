@@ -4,12 +4,20 @@
 | URL | Capability | Audience | Notes |
 |-----|------------|----------|-------|
 
-## Key User Flows
-```
-flowchart TD
-    Start[Entry] --> Step1[Action]
-    Step1 --> Step2[System Response]
-    Step2 --> End[Outcome]
+## Key User Flows (Mermaid C3)
+```mermaid
+flowchart LR
+    subgraph UI
+        Entry[Entry Point]
+        View[UI Component]
+    end
+    subgraph Service
+        API[(API / Service)]
+    end
+    Entry --> View
+    View --> API
+    API --> Outcome[Outcome]
+    View --> Recovery[Recovery Flow]
 ```
 - Success criteria:
 - Error / recovery paths:
@@ -22,6 +30,9 @@ flowchart TD
 - Copy highlights:
 - Empty / loading state expectations:
 - Accessibility considerations:
+
+## Data Flow Reference
+Summarise the relevant sections from `agent-artifacts/product/prd-data-flow.md` that this user flow depends on (e.g., API endpoints, events, data stores).
 
 ## Handoff Notes
 - Analytics events to fire:

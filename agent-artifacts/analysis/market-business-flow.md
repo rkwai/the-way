@@ -6,13 +6,17 @@
 - Competitive alternatives:
 
 ## Demand Signals
-- Top customer jobs-to-be-done:
-- Pain points and triggers:
-- Retention or churn indicators:
+- Observable actions that prove demand (searches, communities, RFPs):
+- Growth trends:
+- Competitive benchmarks:
 
-## Money Flow Diagram
-```
-[ Customer ] --payment--> [ Revenue Stream ] --allocation--> [ Cost Centers ]
+## Money Flow Diagram (Mermaid)
+```mermaid
+flowchart LR
+    Customer[Customer] -->|Payment| Revenue[Revenue Stream]
+    Revenue --> CostCenters[Cost Centers]
+    Revenue --> Offering[Product / Service Offering]
+    Offering --> Value[Customer Value Delivered]
 ```
 - Pricing / monetisation notes:
 - Key assumptions to validate:

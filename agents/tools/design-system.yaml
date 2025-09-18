@@ -1,4 +1,0 @@
-name: Design System
-usage: Source of truth for components, tokens, and accessibility guidelines.
-artifacts:
-- artifact: artifacts/ux/user-flow-map.md

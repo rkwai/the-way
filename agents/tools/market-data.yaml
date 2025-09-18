@@ -1,6 +1,0 @@
-name: Market Data Sources
-usage: Pull external market size, demand, and competitor metrics.
-endpoints:
-- https://example.com/market-reports
-artifacts:
-- artifact: artifacts/analysis/market-business-flow.md

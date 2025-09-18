@@ -1,6 +1,6 @@
 # Service API Module
 
-Use this directory to implement the capabilities listed in the Money & Data PRD (`artifacts/product/prd-data-flow.md`).
+Use this directory to implement the capabilities listed in the Money & Data PRD (`agent-artifacts/product/prd-data-flow.md`).
 
 ## Quick Commands
 | Command | Purpose |
@@ -19,4 +19,4 @@ Use this directory to implement the capabilities listed in the Money & Data PRD 
 - Staging: `npm run deploy:staging`
 - Production: `npm run deploy:prod`
 
-Document any changes back in `artifacts/product/prd-data-flow.md` and `agents/logs/prd-data-flow.md`.
+Document any changes back in `agent-artifacts/product/prd-data-flow.md` and `agents/changelog/prd-data-flow.md`.

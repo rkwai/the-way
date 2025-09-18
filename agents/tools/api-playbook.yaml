@@ -1,4 +1,0 @@
-name: Api Playbook
-usage: Reference patterns, schema templates, and governance for service capabilities.
-artifacts:
-- artifact: artifacts/product/prd-data-flow.md
