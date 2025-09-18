@@ -13,12 +13,17 @@
 ## Money Flow Diagram (Mermaid)
 ```mermaid
 flowchart LR
-    Customer[Customer] -->|Payment| Revenue[Revenue Stream]
-    Revenue --> CostCenters[Cost Centers]
-    Revenue --> Offering[Product / Service Offering]
-    Offering --> Value[Customer Value Delivered]
+    Economy[[Economy Spend]] --> Market[Category / Market Spend]
+    Market --> Segment[Job / Segment Budget]
+    Segment --> Customers[Active Demand Signals]
+    Customers --> Incumbents[Existing Solutions]
+    Customers --> Interception{Interception Points}
+    Interception --> Product[Our Product Capability]
+    Product --> Company[Company Revenue Streams]
+    Company --> Reinforcement[Retention & Expansion]
 ```
-- Pricing / monetisation notes:
+- Interception / capture strategy:
+- Pricing & monetisation notes:
 - Key assumptions to validate:
 
 ## Business Analysis
