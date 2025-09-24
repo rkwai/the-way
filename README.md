@@ -6,16 +6,18 @@ This template keeps product development focused on three artifacts that move mar
 3. **User Flow** – Frontend Engineer (designer mindset)
 
 ## How to Use
-1. Install and authenticate the Codex CLI.
-2. Clone this repo, adjust names to your organisation, and fill in any required context (e.g. `agent-data-sources/`).
-3. From the repository root, start a Codex session so it loads `workspace.yaml` (for example, run `codex --cd /path/to/the-way`).
-4. Launch the agent you need (`data`, `backend`, or `frontend`) from inside the CLI; Codex will step through the workflows declared in `agents/<agent>.yaml`.
-5. Let each agent drive the creation or refresh of the linked artifacts and logs. Review the updates, make any company-specific edits, and commit when the documentation and changelog entries reflect the latest cycle.
+1. Copy the contents of this repository into the scaffolding folder of your product workspace or mono-repo.
+2. Install and authenticate the Codex CLI.
+3. Tailor names and conventions across `agents/`, `agent-artifacts/`, and `changelog/` to match your organisation.
+4. Wire these agents into your Codex workspace configuration (e.g., add them to your existing `workspace.yaml` so the `data`, `backend`, and `frontend` agents reference the YAML files in `agents/`).
+5. Encourage your team to populate every template in `agent-data-sources/` before touching the agents so the external context is fresh.
+6. Verify the accuracy and completeness of those data-source files (fix gaps, add citations, confirm owners).
+7. From the repository root, start a Codex session with the workspace configuration you just wired up (for example, run `codex --cd /path/to/the-way`) and ask Codex to execute the agents in order: `data`, then `backend`, then `frontend`.
+8. Let the agents fill out the linked artifacts and changelog entries, review the generated documentation, and commit once everything reflects the validated sources.
 
 ## Repository Map
 ```
 .
-├── workspace.yaml         # Registers agents for Codex
 ├── agents/
 │   ├── data.yaml           # Data engineer definition
 │   ├── backend.yaml        # Backend engineer definition
@@ -28,10 +30,9 @@ This template keeps product development focused on three artifacts that move mar
 │   ├── ux/user-flow-map.md                # Experience blueprint
 │   ├── architecture/system-map.md         # System topology & decisions
 │   └── observability/plan.md              # Product + technical signals
-├── changelog/            # Log templates for money/data/user flows + architecture/observability
 ├── agent-data-sources/    # Templates for external data (market, analytics, design, API)
-├── environment-profiles/   # Local, staging, and production profiles
-└── products/               # Example codebases to implement capabilities
+├── changelog/             # Log templates for money/data/user flows + architecture/observability
+└── README.md
 ```
 
 ## Agent Workflows

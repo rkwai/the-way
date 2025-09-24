@@ -1,4 +1,4 @@
-# Product Requirements Document (Money & Data Focus)
+# Product Requirements Document (Money & Data)
 
 ## Opportunity
 - Customer problem:
